@@ -1,0 +1,43 @@
+# config.yaml
+
+#If path dosen't work, copy path by your own and paste here
+data_root: ./dataset/images
+labels_root: ./dataset/labels
+
+
+out: ./Yolo_SDI
+project: Yolo_SDI
+
+# YOLO model
+model: yolo11x.pt
+epochs: 300
+imgsz: 640
+batch: 16
+workers: 8
+name: Yolo_SDI
+patience: 300
+hsv_h: 0.015
+hsv_s: 0.7
+hsv_v: 0.4
+degrees: 0.0
+translate: 0.1
+scale: 0.5
+shear: 0.0
+perspective: 0.0
+flipud: 0.0
+fliplr: 0.5
+bgr: 0.0
+mosaic: 1.0
+mixup: 0.0
+cutmix: 0.0
+copy_paste: 0.0
+
+
+# dataset split
+val_ratio: 0.2
+seed: 42
+
+# dataset classes
+nc: 1
+names:
+  0: valve
