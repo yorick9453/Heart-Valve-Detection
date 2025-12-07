@@ -8,8 +8,7 @@ from tqdm import tqdm
 from ultralytics import YOLO
 
 # Tool Function
-def center(x1, y1, x2, y2):
-    return ((x1 + x2) / 2, (y1 + y2) / 2)
+
 
 def iou(b1, b2):
     x1 = max(b1[2], b2[2])
