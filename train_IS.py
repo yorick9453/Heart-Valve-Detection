@@ -106,7 +106,7 @@ if __name__ == '__main__':
     # model + callback
 
     #If path dosen't work, copy path by your own and paste here
-    model = YOLO(model = './ultralytics/cfg/models/11/yolo11x.yaml')
+    model = YOLO(model = cfg['model'])
 
 
     def stop_at_180(trainer):
