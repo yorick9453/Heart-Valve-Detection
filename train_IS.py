@@ -20,26 +20,7 @@ def find_images(data_root, exts=None):
             images.append(p)
     return images
 
-def label_is_empty(label_path: Path):
-    if not label_path.exists():
-        return True
-    txt = label_path.read_text().strip()
-    return len(txt) == 0
 
-def parse_label_file(label_path: Path):
-    if not label_path.exists():
-        return []
-    lines = label_path.read_text().strip().splitlines()
-    boxes = []
-    for l in lines:
-        if not l.strip():
-            continue
-        parts = l.split()
-        if len(parts) >= 5:
-            cls = int(float(parts[0]))
-            x, y, w, h = map(float, parts[1:5])
-            boxes.append((cls, x, y, w, h))
-    return boxes
 
 
 def split_by_image(images, val_ratio=0.2, seed=42):
@@ -82,20 +63,7 @@ def create_dataset_yaml(out_path, train_images, val_images, labels_root, nc=1, n
         yaml.safe_dump(dataset, f)
     return str(yaml_path)
 
-def draw_boxes_on_image(img_bgr, gt_boxes, pred_boxes, save_path=None):
-    img = img_bgr.copy()
-    h, w = img.shape[:2]
-    for cls, x, y, bw, bh in gt_boxes:
-        cx, cy = x * w, y * h
-        bw_px, bh_px = bw * w, bh * h
-        x1, y1 = int(cx - bw_px/2), int(cy - bh_px/2)
-        x2, y2 = int(cx + bw_px/2), int(cy + bh_px/2)
-        cv2.rectangle(img, (x1,y1), (x2,y2), (0,255,0), 2)
-    for x1,y1,x2,y2,conf,cls in pred_boxes:
-        cv2.rectangle(img, (int(x1),int(y1)), (int(x2),int(y2)), (0,0,255), 2)
-    if save_path:
-        cv2.imwrite(str(save_path), img)
-    return img
+
 
 
 if __name__ == '__main__':
