@@ -9,7 +9,7 @@ out: ./Yolo_SDI
 project: Yolo_SDI
 
 # YOLO model
-model: yolo11x.pt
+model: ./ultralytics/cfg/models/11/yolo11x.yaml
 epochs: 300
 imgsz: 640
 batch: 16
