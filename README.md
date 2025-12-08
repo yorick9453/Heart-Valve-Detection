@@ -104,7 +104,7 @@ python inference_with_AfterProcessing.py --config inf_IS_x.yaml
 最終結果會輸出在：
 
 ```
-./results/SDI_Final.txt
+./results/Final.txt
 ```
 
 （可自行修改名稱，例如：`XXX.txt`）
