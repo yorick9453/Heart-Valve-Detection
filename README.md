@@ -74,7 +74,9 @@ python train_IS.py --config config_IS_x.yaml
 
 (linux): 
 ```
+cd results
 gdown --fuzzy "https://drive.google.com/file/d/1iT2iCLMsTPpa1EyzFknHvw_DFbtvhUct/view?usp=sharing"
+cd ..
 ```
 
 (windows):
@@ -82,7 +84,7 @@ gdown --fuzzy "https://drive.google.com/file/d/1iT2iCLMsTPpa1EyzFknHvw_DFbtvhUct
 https://drive.google.com/file/d/1iT2iCLMsTPpa1EyzFknHvw_DFbtvhUct/view
 
 
-若要使用自行訓練的模型，請自行修改為：
+若要使用自行訓練的模型，請將路徑自行修改為：
 
 ```
 ./{out}/{name}/weights/best.pt
