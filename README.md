@@ -70,7 +70,17 @@ python train_IS.py --config config_IS_x.yaml
 
 ### 第七步：修改 `inf_IS_x.yaml`（若要復現則跳過）
 
-YAML 中模型預設路徑為我已訓練好的最佳模型。  
+若要使用以訓練好的模型，請自行下載 
+
+(linux): 
+```
+gdown --fuzzy "https://drive.google.com/file/d/1iT2iCLMsTPpa1EyzFknHvw_DFbtvhUct/view?usp=sharing"
+```
+
+(windows):
+https://drive.google.com/file/d/1iT2iCLMsTPpa1EyzFknHvw_DFbtvhUct/view
+
+
 若要使用自行訓練的模型，請自行修改為：
 
 ```
