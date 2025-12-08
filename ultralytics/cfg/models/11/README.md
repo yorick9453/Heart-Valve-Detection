@@ -91,9 +91,7 @@ YAML 中模型預設路徑為我已訓練好的最佳模型。
 
 以下為 ultralytics YOLO 架構中被調整的檔案：
 
-
-./ultralytics/nn/tasks.py                (訓練流程)
-
-./ultralytics/nn/blocks.py               (SDI 改編模塊)
-
-./ultralytics/cfg/models/11/yolo11.yaml  (模型架構)
+```
+./ultralytics/nn/tasks.py # 訓練流程
+./ultralytics/nn/blocks.py # SDI 改編模塊
+./ultralytics/cfg/models/11/yolo11.yaml # 模型架構
