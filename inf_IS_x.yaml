@@ -1,6 +1,6 @@
 model: "./results/SDI_best.pt"
 image_dir: "./testdata/testing_image"
-final_output: ./results/SDI_Final.txt
+final_output: ./results/Final.txt
 iou: 0.5
 imgsz: 640
 conf: 0.0005
