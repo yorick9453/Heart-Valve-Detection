@@ -34,7 +34,7 @@ conda activate valve_detection
 ### 第三步：移動到專案資料夾
 
 ```bash
-cd Heart-Valve-Detection
+cd Heart-Valve-Detection-main
 ```
 
 ### 第四步：安裝必要套件
