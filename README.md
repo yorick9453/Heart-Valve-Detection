@@ -78,6 +78,7 @@ gdown --fuzzy "https://drive.google.com/file/d/1iT2iCLMsTPpa1EyzFknHvw_DFbtvhUct
 ```
 
 (windows):
+
 https://drive.google.com/file/d/1iT2iCLMsTPpa1EyzFknHvw_DFbtvhUct/view
 
 
@@ -85,6 +86,12 @@ https://drive.google.com/file/d/1iT2iCLMsTPpa1EyzFknHvw_DFbtvhUct/view
 
 ```
 ./{out}/{name}/weights/best.pt
+```
+
+### 第八步：執行 inference_with_AfterProcessing.py
+
+```bash
+python inference_with_AfterProcessing.py --config inf_IS_x.yaml
 ```
 
 最終結果會輸出在：
