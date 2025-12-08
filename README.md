@@ -68,7 +68,7 @@ python train_IS.py --config config_IS_x.yaml
 
 ---
 
-### 第七步：修改 `inf_IS_x.yaml`（若要復現則跳過）
+### 第七步：修改 `inf_IS_x.yaml`
 
 若要使用以訓練好的模型，請自行下載 
 
