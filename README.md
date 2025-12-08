@@ -75,7 +75,11 @@ python train_IS.py --config config_IS_x.yaml
 (linux): 
 ```
 cd results
+```
+```
 gdown --fuzzy "https://drive.google.com/file/d/1iT2iCLMsTPpa1EyzFknHvw_DFbtvhUct/view?usp=sharing"
+```
+```
 cd ..
 ```
 
